@@ -7,6 +7,7 @@ import { Menu, X, Sun, Moon } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { gsap } from "gsap"
+import kertiles_logo from "../../../public/assets/kertiles_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -58,7 +59,9 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled
+          ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -66,7 +69,7 @@ const Header = () => {
           <Link href="/" className="header-logo flex items-center">
             <div className="relative h-10 w-32">
               <Image
-                src="/placeholder.svg?height=40&width=128"
+                src={kertiles_logo}
                 alt="KERTILES Logo"
                 width={128}
                 height={40}
@@ -78,20 +81,34 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="nav-item text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#about"
+              className="nav-item text-sm font-medium hover:text-primary transition-colors"
+            >
               Who We Are
             </Link>
-            <Link href="#offer" className="nav-item text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#offer"
+              className="nav-item text-sm font-medium hover:text-primary transition-colors"
+            >
               What We Offer
             </Link>
-            <Link href="#projects" className="nav-item text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#projects"
+              className="nav-item text-sm font-medium hover:text-primary transition-colors"
+            >
               Projects
             </Link>
-            <Link href="#showroom" className="nav-item text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#showroom"
+              className="nav-item text-sm font-medium hover:text-primary transition-colors"
+            >
               Showroom
             </Link>
             <Link href="#contact">
-              <Button className="nav-item bg-primary hover:bg-primary/90 text-white">Contact Us</Button>
+              <Button className="nav-item bg-primary hover:bg-primary/90 text-white">
+                Contact Us
+              </Button>
             </Link>
             <button
               onClick={toggleTheme}
@@ -155,13 +172,15 @@ const Header = () => {
               Showroom
             </Link>
             <Link href="#contact" onClick={toggleMenu}>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white">Contact Us</Button>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                Contact Us
+              </Button>
             </Link>
           </div>
         </div>
       )}
     </header>
-  )
+  );
 }
 
 export default Header
