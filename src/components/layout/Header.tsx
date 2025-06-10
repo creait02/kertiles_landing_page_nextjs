@@ -7,7 +7,7 @@ import { Menu, X, Sun, Moon } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { gsap } from "gsap"
-import kertiles_logo from "../../../public/assets/kertiles_logo.png";
+import kertiles_logo from "@images/kertiles_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

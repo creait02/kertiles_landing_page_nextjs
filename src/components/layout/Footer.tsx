@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import kertiles_logo from "@images/kertiles_logo.png";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
             <Link href="/" className="inline-block">
               <div className="relative h-10 w-32">
                 <Image
-                  src="/placeholder.svg?height=40&width=128"
+                  src={kertiles_logo}
                   alt="KERTILES Logo"
                   width={128}
                   height={40}
@@ -21,22 +22,35 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-sm text-gray-600 dark:text-gray-400 max-w-xs">
-              KERTILES offers premium ceramic, porcelain, and wall panels for your construction and decoration needs.
+              KERTILES offers premium ceramic, porcelain, and wall panels for
+              your construction and decoration needs.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-500 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-500 hover:text-primary transition-colors"
+              >
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-500 hover:text-primary transition-colors"
+              >
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-500 hover:text-primary transition-colors"
+              >
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-500 hover:text-primary transition-colors"
+              >
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -133,11 +147,15 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-primary" />
-                <span className="text-sm text-gray-600 dark:text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-sm text-gray-600 dark:text-gray-400">
+                  +1 (555) 123-4567
+                </span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-primary" />
-                <span className="text-sm text-gray-600 dark:text-gray-400">info@kertiles.com</span>
+                <span className="text-sm text-gray-600 dark:text-gray-400">
+                  info@kertiles.com
+                </span>
               </li>
             </ul>
           </div>
@@ -173,7 +191,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
 export default Footer
