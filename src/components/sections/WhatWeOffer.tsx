@@ -98,8 +98,7 @@ const WhatWeOffer = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What We Offer</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">
-            Discover our comprehensive range of premium products designed to elevate your spaces with elegance and
-            durability.
+            Staying on top of trends is easy with materials that stand the test of time. Our porcelain tiles come in all the classic and latest fashions so that our architects, contractors, and distributors can keep their showrooms and projects looking fresh, modern, and sleek.
           </p>
         </div>
 

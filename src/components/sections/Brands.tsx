@@ -4,22 +4,25 @@ import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import kertiles_red_logo from "@images/kertiles_red_logo.png"
+import euroker_logo from "@images/euroker_logo.png"
+import kerdecora_logo from "@images/kerdecora_logo.png"
 
 const brands = [
   {
     name: "KERTILES",
     description: "Premium ceramic and porcelain solutions",
-    logo: "/placeholder.svg?height=80&width=200",
+    logo: `${kertiles_red_logo.src}`,
   },
   {
     name: "EUROKER",
     description: "European export division",
-    logo: "/placeholder.svg?height=80&width=200",
+    logo: `${euroker_logo.src}`,
   },
   {
     name: "KERDECORA",
     description: "Natural wall panels and decoration",
-    logo: "/placeholder.svg?height=80&width=200",
+    logo: `${kerdecora_logo.src}`,
   },
 ]
 
@@ -75,7 +78,7 @@ const Brands = () => {
                   src={brand.logo || "/placeholder.svg"}
                   alt={`${brand.name} Logo`}
                   fill
-                  className="object-contain"
+                  className="object-contain mx-auto"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">{brand.name}</h3>
