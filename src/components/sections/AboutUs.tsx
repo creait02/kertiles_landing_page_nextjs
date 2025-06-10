@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import about_us_image from "@images/about.jpg"
 
 const AboutUs = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -43,14 +44,14 @@ const AboutUs = () => {
           <div ref={imageRef} className="relative">
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src={about_us_image.src}
                 alt="KERTILES Showroom"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary p-4 md:p-6 rounded-lg shadow-lg">
-              <p className="text-2xl md:text-3xl font-bold text-white">25+</p>
+              <p className="text-2xl md:text-3xl font-bold text-white">+30</p>
               <p className="text-sm text-white/90">Years of Excellence</p>
             </div>
           </div>
@@ -62,9 +63,7 @@ const AboutUs = () => {
               <div className="w-20 h-1 bg-primary"></div>
             </div>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              KERTILES is a leading provider of premium ceramic, porcelain, and decorative wall panels. With over 25
-              years of experience, we've established ourselves as industry pioneers, delivering exceptional quality and
-              innovative designs.
+              KERTILES manufactures the materials needed to make modern designs a reality. We house a variety of design-forward products like porcelain tiles, mosaics, bathroom vanities, kitchen cabinets, and more.
             </p>
             <p className="text-gray-600 dark:text-gray-400">Our company comprises two specialized divisions:</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
