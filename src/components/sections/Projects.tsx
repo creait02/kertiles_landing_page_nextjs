@@ -15,6 +15,7 @@ import project_image_1 from "@images/project_image_1.jpeg"
 const projects = [
   {
     id: 1,
+    slug: "modern-residential-complex",
     title: "Modern Residential Complex",
     category: "Residential",
     description:
@@ -24,6 +25,7 @@ const projects = [
   },
   {
     id: 2,
+    slug: "boutique-hotel-renovation",
     title: "Boutique Hotel Renovation",
     category: "Hospitality",
     description:
@@ -33,6 +35,7 @@ const projects = [
   },
   {
     id: 3,
+    slug: "corporate-headquarters",
     title: "Corporate Headquarters",
     category: "Commercial",
     description: "A modern corporate office space featuring our ceramic tiles in a contemporary design pattern.",
@@ -41,6 +44,7 @@ const projects = [
   },
   {
     id: 4,
+    slug: "luxury-spa-retreat",
     title: "Luxury Spa Retreat",
     category: "Wellness",
     description: "An exclusive spa featuring our waterproof porcelain tiles and decorative wall panels.",
@@ -149,9 +153,9 @@ const Projects = () => {
                 <p className="text-gray-700 dark:text-gray-300">{projects[activeProject].description}</p>
 
                 <div className="pt-4">
-                  <Link href="#contact">
+                  <Link href={`/projects/${projects[activeProject].slug}`}>
                     <Button className="flex items-center gap-2">
-                      Request Similar Project <ExternalLink size={16} />
+                      View Project Details <ExternalLink size={16} />
                     </Button>
                   </Link>
                 </div>
@@ -185,15 +189,16 @@ const Projects = () => {
         {/* Project Thumbnails */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
           {projects.map((project, index) => (
-            <button
-              key={project.id}
-              onClick={() => setActiveProject(index)}
-              className={`relative h-24 rounded-md overflow-hidden transition-all ${
-                activeProject === index ? "ring-2 ring-primary ring-offset-2" : "opacity-70 hover:opacity-100"
-              }`}
-            >
-              <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
-            </button>
+            <Link key={project.id} href={`/projects/${project.slug}`}>
+              <button
+                onClick={() => setActiveProject(index)}
+                className={`relative h-24 rounded-md overflow-hidden transition-all ${
+                  activeProject === index ? "ring-2 ring-primary ring-offset-2" : "opacity-70 hover:opacity-100"
+                }`}
+              >
+                <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+              </button>
+            </Link>
           ))}
         </div>
       </div>
