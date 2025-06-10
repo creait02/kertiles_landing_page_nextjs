@@ -7,6 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import project_image_4 from "@images/project_image_4.jpeg"
+import project_image_3 from "@images/project_image_3.jpeg"
+import project_image_2 from "@images/project_image_2.jpeg"
+import project_image_1 from "@images/project_image_1.jpeg"
 
 const projects = [
   {
@@ -15,7 +19,7 @@ const projects = [
     category: "Residential",
     description:
       "A luxury residential complex featuring our premium porcelain tiles throughout common areas and private spaces.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: `${project_image_4.src}`,
     location: "Miami, FL",
   },
   {
@@ -24,7 +28,7 @@ const projects = [
     category: "Hospitality",
     description:
       "Complete renovation of a boutique hotel using our KERDECORA wall panels to create a unique atmosphere.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: `${project_image_3.src}`,
     location: "New York, NY",
   },
   {
@@ -32,7 +36,7 @@ const projects = [
     title: "Corporate Headquarters",
     category: "Commercial",
     description: "A modern corporate office space featuring our ceramic tiles in a contemporary design pattern.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: `${project_image_2.src}`,
     location: "Chicago, IL",
   },
   {
@@ -40,7 +44,7 @@ const projects = [
     title: "Luxury Spa Retreat",
     category: "Wellness",
     description: "An exclusive spa featuring our waterproof porcelain tiles and decorative wall panels.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: `${project_image_1.src}`,
     location: "Los Angeles, CA",
   },
 ]
