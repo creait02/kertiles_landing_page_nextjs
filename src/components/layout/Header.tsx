@@ -110,24 +110,24 @@ const Header = () => {
                 Contact Us
               </Button>
             </Link>
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="nav-item p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+            </button> */}
           </nav>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center md:hidden">
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="p-2 mr-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+            </button> */}
             <button
               onClick={toggleMenu}
               className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
