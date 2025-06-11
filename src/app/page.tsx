@@ -1,13 +1,14 @@
 "use client"
 
 import { useEffect } from "react"
-import Hero from "@/components/sections/Hero"
-import AboutUs from "@/components/sections/AboutUs"
-import WhatWeOffer from "@/components/sections/WhatWeOffer"
-import Projects from "@/components/sections/Projects"
-import Showroom from "@/components/sections/Showroom"
+import VisualHero from "@/components/sections/VisualHero"
+import VisualAboutUs from "@/components/sections/VisualAboutUs"
+import VisualProducts from "@/components/sections/VisualProducts"
+import VisualProjects from "@/components/sections/VisualProjects"
+import VisualShowroom from "@/components/sections/VisualShowroom"
 import ContactUs from "@/components/sections/ContactUs"
-import Brands from "@/components/sections/Brands"
+import BrandsShowcase from "@/components/sections/BrandsShowcase"
+import ProductGallery from "@/components/sections/ProductGallery"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -47,12 +48,13 @@ export default function Home() {
 
   return (
     <>
-      <Hero />
-      <AboutUs />
-      <WhatWeOffer />
-      <Brands />
-      <Projects />
-      <Showroom />
+      <VisualHero />
+      <VisualAboutUs />
+      <VisualProducts />
+      <ProductGallery />
+      <BrandsShowcase />
+      <VisualProjects />
+      <VisualShowroom />
       <ContactUs />
     </>
   )
