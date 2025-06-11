@@ -4,20 +4,22 @@ import ProjectDetail from "@/components/projects/ProjectDetail"
 import { getProjectBySlug, getAllProjects } from "@/lib/projects"
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
-  const projects = getAllProjects()
+  const projects = await getAllProjects() // <-- ahora es async
   return projects.map((project) => ({
     slug: project.slug,
   }))
 }
 
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-  const project = getProjectBySlug(params.slug)
+  const resolvedParams = await params
+  const project = await getProjectBySlug(resolvedParams.slug)
+  // const project = await getProjectBySlug(params.slug) // <-- ahora es async
 
   if (!project) {
     return {
@@ -37,7 +39,8 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const project = getProjectBySlug(params.slug)
+  const resolvedParams = await params
+  const project = await getProjectBySlug(resolvedParams.slug) // <-- ahora es async
 
   if (!project) {
     notFound()

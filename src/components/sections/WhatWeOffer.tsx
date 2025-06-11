@@ -118,7 +118,6 @@ const WhatWeOffer = () => {
           {productCategories.map((category) => (
             <div
               key={category.id}
-              value={category.id}
               className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
             >
               <div className="order-2 lg:order-1 space-y-6 animate__animated animate__fadeIn">

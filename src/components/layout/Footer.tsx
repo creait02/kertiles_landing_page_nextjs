@@ -142,7 +142,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 text-primary mt-0.5" />
                 <span className="text-sm text-gray-600 dark:text-gray-400">
-                  123 Ceramic Street, Tile City, TC 12345
+                  3281 NW 78th Ave. Miami, Florida 33122
                 </span>
               </li>
               <li className="flex items-center">
