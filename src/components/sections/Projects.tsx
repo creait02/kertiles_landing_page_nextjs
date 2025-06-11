@@ -189,15 +189,23 @@ const Projects = () => {
         {/* Project Thumbnails */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
           {projects.map((project, index) => (
-            <Link key={project.id} href={`/projects/${project.slug}`}>
-              <button
-                onClick={() => setActiveProject(index)}
-                className={`relative h-24 rounded-md overflow-hidden transition-all ${
-                  activeProject === index ? "ring-2 ring-primary ring-offset-2" : "opacity-70 hover:opacity-100"
-                }`}
-              >
-                <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
-              </button>
+            <Link
+              key={project.id}
+              href={`/projects/${project.slug}`}
+              onClick={() => setActiveProject(index)}
+              className={`relative h-24 rounded-md overflow-hidden transition-all cursor-pointer ${
+                activeProject === index ? "ring-2 ring-primary ring-offset-2" : "opacity-70 hover:opacity-100"
+              }`}
+              aria-current={activeProject === index ? "true" : undefined}
+              tabIndex={0}
+            >
+              <Image
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
             </Link>
           ))}
         </div>

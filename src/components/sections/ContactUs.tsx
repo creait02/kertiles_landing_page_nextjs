@@ -114,13 +114,18 @@ const ContactUs = () => {
   }, [])
 
   return (
-    <section id="contact" ref={sectionRef} className="py-20 md:py-32 bg-white dark:bg-gray-900 gsap-section">
+    <section
+      id="contact"
+      ref={sectionRef}
+      className="py-20 md:py-32 bg-white dark:bg-gray-900 gsap-section"
+    >
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div ref={headingRef} className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">
-            Have questions about our products or services? Reach out to our team and we'll be happy to assist you.
+            Have questions about our products or services? Reach out to our team
+            and we'll be happy to assist you.
           </p>
         </div>
 
@@ -131,11 +136,15 @@ const ContactUs = () => {
               {isSubmitted ? (
                 <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6 text-center animate__animated animate__fadeIn">
                   <div className="mx-auto w-12 h-12 bg-green-100 dark:bg-green-800 rounded-full flex items-center justify-center mb-4">
-                    <Check className="text-green-600 dark:text-green-300" size={24} />
+                    <Check
+                      className="text-green-600 dark:text-green-300"
+                      size={24}
+                    />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Your message has been sent successfully. Our team will get back to you shortly.
+                    Your message has been sent successfully. Our team will get
+                    back to you shortly.
                   </p>
                 </div>
               ) : (
@@ -190,8 +199,12 @@ const ContactUs = () => {
                         <option value="ceramic-tiles">Ceramic Tiles</option>
                         <option value="porcelain-tiles">Porcelain Tiles</option>
                         <option value="wall-panels">Wall Panels</option>
-                        <option value="construction-materials">Construction Materials</option>
-                        <option value="design-consultation">Design Consultation</option>
+                        <option value="construction-materials">
+                          Construction Materials
+                        </option>
+                        <option value="design-consultation">
+                          Design Consultation
+                        </option>
                         <option value="showroom-visit">Showroom Visit</option>
                         <option value="other">Other</option>
                       </select>
@@ -223,7 +236,11 @@ const ContactUs = () => {
                     />
                   </div>
 
-                  <Button type="submit" disabled={isSubmitting} className="w-full bg-primary hover:bg-primary/90">
+                  <Button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary hover:bg-primary/90"
+                  >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </>
@@ -236,8 +253,9 @@ const ContactUs = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-8">
-                We're here to help you find the perfect ceramic and porcelain solutions for your project. Contact us
-                through any of the following methods:
+                We're here to help you find the perfect ceramic and porcelain
+                solutions for your project. Contact us through any of the
+                following methods:
               </p>
             </div>
 
@@ -249,9 +267,9 @@ const ContactUs = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Visit Our Showroom</h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    123 Ceramic Street
+                    3281 NW 78th Ave.
                     <br />
-                    Tile City, TC 12345
+                    Miami, Florida 33122
                   </p>
                 </div>
               </div>
@@ -278,8 +296,6 @@ const ContactUs = () => {
                   <h4 className="font-semibold mb-1">Email Us</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     info@kertiles.com
-                    <br />
-                    sales@kertiles.com
                   </p>
                 </div>
               </div>
@@ -306,7 +322,7 @@ const ContactUs = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default ContactUs
