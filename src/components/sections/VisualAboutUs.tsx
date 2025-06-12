@@ -4,11 +4,13 @@ import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import kertiles_project from "@images/project_image_4.jpeg"
+import kerdecora_project from "@images/kerdecora.jpeg"
 
 const brandImages = [
   {
     brand: "KERTILES",
-    image: "/placeholder.svg?height=400&width=600",
+    image: `${kertiles_project.src}`,
     description: "Premium ceramic solutions",
   },
   {
@@ -18,10 +20,10 @@ const brandImages = [
   },
   {
     brand: "KERDECORA",
-    image: "/placeholder.svg?height=400&width=600",
+    image: `${kerdecora_project.src}`,
     description: "Natural wall panels",
   },
-]
+];
 
 const VisualAboutUs = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -86,7 +88,7 @@ const VisualAboutUs = () => {
         {/* Stats Visual */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">
-            <div className="text-4xl md:text-5xl font-bold text-primary">25+</div>
+            <div className="text-4xl md:text-5xl font-bold text-primary">30+</div>
             <div className="text-gray-600 dark:text-gray-400">Years Experience</div>
           </div>
           <div className="space-y-2">

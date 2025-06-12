@@ -9,6 +9,9 @@ import { gsap } from "gsap"
 import "animate.css"
 import banner_image from "@images/banner_image.jpeg"
 import banner from "@images/banner.jpeg"
+import kerdecora_banner from "@images/kerdecora_hero.jpeg"
+import banner_project from "@images/project_image_3.jpeg"
+
 
 const heroImages = [
   {
@@ -22,12 +25,12 @@ const heroImages = [
     subtitle: "Modern Designs",
   },
   {
-    src: "/placeholder.svg?height=1080&width=1920",
+    src: `${kerdecora_banner.src}`,
     title: "Wall Panels",
     subtitle: "Natural Beauty",
   },
   {
-    src: "/placeholder.svg?height=1080&width=1920",
+    src: `${banner_project.src}`,
     title: "Construction Solutions",
     subtitle: "Professional Grade",
   },

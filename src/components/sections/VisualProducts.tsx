@@ -5,17 +5,22 @@ import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import product_1 from "@images/product_1.jpeg"
+import product_2 from "@images/product_2.jpeg"
+import product_3 from "@images/product_3.jpeg"
+import product_4 from "@images/product_4.jpeg"
+import product_5 from "@images/product_5.jpeg"
 
 const productCategories = [
   {
     id: "ceramics",
     title: "Ceramic Tiles",
     images: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      `${product_1.src}`,
+      `${product_2.src}`,
+      `${product_3.src}`,
+      `${product_4.src}`,
+      `${product_5.src}`,
       "/placeholder.svg?height=400&width=600",
     ],
   },
@@ -23,7 +28,7 @@ const productCategories = [
     id: "porcelain",
     title: "Porcelain Tiles",
     images: [
-      "/placeholder.svg?height=400&width=600",
+      `${product_2.src}`,
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
@@ -35,11 +40,11 @@ const productCategories = [
     id: "wall-panels",
     title: "Wall Panels",
     images: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      `${product_1.src}`,
+      `${product_2.src}`,
+      `${product_3.src}`,
+      `${product_4.src}`,
+      `${product_5.src}`,
       "/placeholder.svg?height=400&width=600",
     ],
   },
@@ -55,7 +60,7 @@ const productCategories = [
       "/placeholder.svg?height=400&width=600",
     ],
   },
-]
+];
 
 const VisualProducts = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
