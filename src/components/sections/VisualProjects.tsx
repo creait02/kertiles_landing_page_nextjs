@@ -8,6 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, MapPin } from "lucide-react"
+import project_1 from "@images/project_1.jpeg"
+import project_2 from "@images/project_2.jpeg"
+import product_5 from "@images/project_5.jpeg"
+import product_1 from "@images/product_1.jpeg"
 
 const projects = [
   {
@@ -17,9 +21,9 @@ const projects = [
     category: "Residential",
     location: "Miami, FL",
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=500&width=700",
+      `${project_1.src}`,
+      `${project_1.src}`,
+      `${project_1.src}`,
     ],
   },
   {
@@ -29,9 +33,9 @@ const projects = [
     category: "Hospitality",
     location: "New York, NY",
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=500&width=700",
+      `${project_2.src}`,
+      `${project_2.src}`,
+      `${project_2.src}`,
     ],
   },
   {
@@ -41,9 +45,9 @@ const projects = [
     category: "Commercial",
     location: "Chicago, IL",
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=500&width=700",
+      `${product_5.src}`,
+      `${product_5.src}`,
+      `${product_5.src}`,
     ],
   },
   {
@@ -53,9 +57,9 @@ const projects = [
     category: "Wellness",
     location: "Los Angeles, CA",
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=500&width=700",
+      `${product_1.src}`,
+      `${product_1.src}`,
+      `${product_1.src}`,
     ],
   },
 ]

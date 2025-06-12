@@ -5,20 +5,34 @@ import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ZoomIn, Filter } from "lucide-react"
+import project_1 from "@images/project_1.jpeg"
+import project_2 from "@images/project_2.jpeg"
+import project_3 from "@images/project_3.jpeg"
+import project_4 from "@images/project_4.jpeg"
+import project_5 from "@images/project_5.jpeg"
+import project_6 from "@images/project_6.jpeg"
+import project_7 from "@images/project_7.jpeg"
+import project_8 from "@images/project_8.jpeg"
+import product_1 from "@images/product_1.jpeg"
+import product_2 from "@images/product_2.jpeg"
+import product_3 from "@images/product_3.jpeg"
+import product_4 from "@images/product_4.jpeg"
+import product_5 from "@images/product_5.jpeg"
 
 const galleryImages = [
-  { src: "/placeholder.svg?height=400&width=600", category: "ceramic", title: "Modern Ceramic Floor" },
-  { src: "/placeholder.svg?height=600&width=400", category: "porcelain", title: "Porcelain Wall Design" },
-  { src: "/placeholder.svg?height=400&width=600", category: "wall-panel", title: "Natural Wall Panel" },
-  { src: "/placeholder.svg?height=500&width=500", category: "ceramic", title: "Ceramic Bathroom" },
-  { src: "/placeholder.svg?height=400&width=600", category: "porcelain", title: "Porcelain Kitchen" },
-  { src: "/placeholder.svg?height=600&width=400", category: "wall-panel", title: "Decorative Panel" },
-  { src: "/placeholder.svg?height=400&width=600", category: "ceramic", title: "Outdoor Ceramic" },
-  { src: "/placeholder.svg?height=400&width=600", category: "porcelain", title: "Commercial Space" },
-  { src: "/placeholder.svg?height=500&width=500", category: "wall-panel", title: "Textured Wall" },
-  { src: "/placeholder.svg?height=400&width=600", category: "ceramic", title: "Living Room Floor" },
-  { src: "/placeholder.svg?height=600&width=400", category: "porcelain", title: "Elegant Porcelain" },
-  { src: "/placeholder.svg?height=400&width=600", category: "wall-panel", title: "Feature Wall" },
+  { src: `${project_1.src}`, category: "ceramic", title: "Modern Ceramic Floor" },
+  { src: `${project_2.src}`, category: "porcelain", title: "Porcelain Wall Design" },
+  { src: `${project_3.src}`, category: "wall-panel", title: "Natural Wall Panel" },
+  { src: `${project_4.src}`, category: "ceramic", title: "Ceramic Bathroom" },
+  { src: `${project_5.src}`, category: "porcelain", title: "Porcelain Kitchen" },
+  { src: `${project_6.src}`, category: "wall-panel", title: "Decorative Panel" },
+  { src: `${project_7.src}`, category: "ceramic", title: "Outdoor Ceramic" },
+  { src: `${project_8.src}`, category: "porcelain", title: "Commercial Space" },
+  { src: `${product_1.src}`, category: "wall-panel", title: "Textured Wall" },
+  { src: `${product_2.src}`, category: "ceramic", title: "Living Room Floor" },
+  { src: `${product_3.src}`, category: "porcelain", title: "Elegant Porcelain" },
+  { src: `${product_4.src}`, category: "wall-panel", title: "Feature Wall" },
+  { src: `${product_5.src}`, category: "wall-panel", title: "Feature Wall" },
 ]
 
 const categories = [

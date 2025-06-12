@@ -4,24 +4,27 @@ import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import kertiles_logo from "@images/kertiles_logo.png"
+import kerdecora_logo from "@images/kerdecora_logo.png"
+import euroker_logo from "@images/euroker_logo.png"
 
 const brandShowcase = [
   {
     name: "KERTILES",
     tagline: "Premium Solutions",
-    image: "/placeholder.svg?height=300&width=500",
+    image: `${kertiles_logo.src}`,
     color: "from-blue-600 to-blue-800",
   },
   {
     name: "EUROKER",
     tagline: "European Excellence",
-    image: "/placeholder.svg?height=300&width=500",
+    image: `${euroker_logo.src}`,
     color: "from-green-600 to-green-800",
   },
   {
     name: "KERDECORA",
     tagline: "Natural Beauty",
-    image: "/placeholder.svg?height=300&width=500",
+    image: `${kerdecora_logo.src}`,
     color: "from-orange-600 to-orange-800",
   },
 ]

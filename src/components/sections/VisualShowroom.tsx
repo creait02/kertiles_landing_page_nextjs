@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, MapPin } from "lucide-react"
+import inaguration_image from "@images/about.jpg"
 
 const projects = [
   {
@@ -17,7 +18,7 @@ const projects = [
     category: "Residential",
     location: "Miami, FL",
     images: [
-      "/placeholder.svg?height=600&width=800",
+      `${inaguration_image.src}`,
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=500&width=700",
     ],
@@ -29,7 +30,7 @@ const projects = [
     category: "Hospitality",
     location: "New York, NY",
     images: [
-      "/placeholder.svg?height=600&width=800",
+      `${inaguration_image.src}`,
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=500&width=700",
     ],
@@ -41,7 +42,7 @@ const projects = [
     category: "Commercial",
     location: "Chicago, IL",
     images: [
-      "/placeholder.svg?height=600&width=800",
+      `${inaguration_image.src}`,
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=500&width=700",
     ],
@@ -53,7 +54,7 @@ const projects = [
     category: "Wellness",
     location: "Los Angeles, CA",
     images: [
-      "/placeholder.svg?height=600&width=800",
+     `${inaguration_image.src}`,
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=500&width=700",
     ],
